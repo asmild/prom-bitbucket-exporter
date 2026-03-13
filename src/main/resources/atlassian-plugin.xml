@@ -8,7 +8,7 @@
         <param name="vendor-icon">/dev/asmild/atlassian/plugins/bitbucketmetricsexporter/images/32.jpg</param>
         <param name="vendor-logo">/dev/asmild/atlassian/plugins/bitbucketmetricsexporter/images/144.jpg</param>
         <param name="plugin-banner">/dev/asmild/atlassian/plugins/bitbucketmetricsexporter/images/banner.png</param>
-        <param name="configure.url">/plugins/servlet/promforbitbucket/token/</param>
+        <param name="configure.url">/plugins/servlet/prometheus-exporter/settings/</param>
         <param name="atlassian-data-center-compatible">true</param>
     </plugin-info>
 
@@ -28,7 +28,7 @@
     <web-item name="Security Token Admin Settings Link" key="bitbucket-metrics-exporter-admin-link" section="atl.admin/admin-plugins-section" weight="500">
         <label key="dev.asmild.atlassian.plugins.bitbucketmetricsexporter.admin.section">Prometheus Exporter Settings</label>
         <description key="dev.asmild.atlassian.plugins.bitbucketmetricsexporter.admin.section.desc">Setup security token for endpoint.</description>
-        <link>/plugins/servlet/promforbitbucket/token/</link>
+        <link>/plugins/servlet/prometheus-exporter/settings/</link>
         <conditions type="AND">
             <condition class="com.atlassian.bitbucket.web.conditions.HasGlobalPermissionCondition">
                 <param name="permission">SYS_ADMIN</param>
@@ -39,7 +39,7 @@
     <!-- Servlets -->
     <servlet name="Security Token Servlet" key="bitbucket-metrics-exporter-admin-servlet" class="dev.asmild.atlassian.plugins.bitbucketmetricsexporter.servlet.AdminMetricsSecurityTokenServlet">
         <description>The Account Servlet Plugin</description>
-        <url-pattern>/promforbitbucket/token/*</url-pattern>
+        <url-pattern>/prometheus-exporter/settings/*</url-pattern>
     </servlet>
     <servlet-filter name="Exporter Filter" key="bitbucket-metrics-exporter-servlet" class="dev.asmild.atlassian.plugins.bitbucketmetricsexporter.servlet.PrometheusExporter" location="before-login" weight="1">
         <description>This filter exposes metrics to prometheus.</description>
