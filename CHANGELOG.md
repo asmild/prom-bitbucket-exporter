@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0] (v9.4.x)
+
+- Bitbucket 9.4 compatibility
+- Fixed token authorization broken by BSERV-19859
+- Metrics endpoint moved from `/plugins/servlet/prometheus/metrics` to `/prometheus/metrics`
+
 ## [1.0.12] (v5.x-6.7.x)
 
 - bitbucket_repo_move_count

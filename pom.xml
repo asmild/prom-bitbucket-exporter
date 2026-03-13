@@ -3,22 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ru.andreymarkelov.atlas.plugins</groupId>
-    <artifactId>prom-bitbucket-exporter</artifactId>
-    <version>1.0.14</version>
+    <groupId>dev.asmild.atlassian.plugins</groupId>
+    <artifactId>bitbucket-metrics-exporter</artifactId>
+    <version>1.1.0</version>
     <packaging>atlassian-plugin</packaging>
 
     <name>Prometheus Exporter For Bitbucket</name>
     <description>This plugin for Atlassian Bitbucket provides endpoint to export metrics to prometheus.</description>
 
     <organization>
-        <name>Andrey Markelov</name>
-        <url>http://ru.linkedin.com/in/andreymarkelov/</url>
+        <name>Ildar Asmandiyarov</name>
+        <url>https://github.com/asmild88/</url>
     </organization>
 
     <scm>
-        <url>https://github.com/AndreyVMarkelov/prom-bitbucket-exporter</url>
-        <connection>scm:git:https://github.com/AndreyVMarkelov/prom-bitbucket-exporter.git</connection>
+        <url>https://git.ib-ci.com/scm/ci/bitbucket-metrics-exporter.git</url>
+        <connection>scm:git:https://git.ib-ci.com/scm/ci/bitbucket-metrics-exporter.git</connection>
         <tag>HEAD</tag>
     </scm>
 
